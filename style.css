@@ -1,0 +1,275 @@
+
+:root {
+	--red: #d33a2c;
+	--darkerRed: #a92e23;
+	--blue: #1b71bb;
+	/*  */
+	background-color: #F0F0F0;
+	
+	--greyshade1: #DCDCDC;
+	--greyshade2: #D3D3D3;
+	--greyshade3: #BEBEBE;
+	--greyshade4: #A0A0A0;
+	--greyshade5: #808080;
+	--greyshade6: #505050;
+	--greyshade7: #202020;
+}
+
+input {
+	border: none;
+	border-radius: 10px;
+	min-width: 200px;
+	padding: 10px 5px;
+	}
+	
+/* Text, font */
+	
+h1, h2, h3, h4, h5, h6 {
+	padding: 20px 5px;
+	text-align: center;
+	}
+	
+p {
+	padding: 10px 15px;
+	}
+	
+nav {
+	font-family: sans-serif;
+	font-weight: 700;
+	}
+	
+.text2, .text3, .text4, .text5 {
+	overflow: hidden;
+	}
+	
+.text1 > section > div > h3 {
+	font-family: sans-serif;
+	font-weight: 600;
+	}
+	
+.text2 {
+	font-family: 'RocknRoll One', sans-serif;
+	line-height: 1.5em;
+	}
+	
+.text2 > div > h3 {
+	font-weight: 700;
+	}
+	
+.text3 {
+	font-family: serif;
+	font-size: 20px;
+	line-height: 2em;
+	}
+	
+.text4 {
+	font-family: 'Oi', cursive;
+	line-height: 2em;
+	}
+	
+.text4 > div > h3 {
+	font-size: 25px;
+	}
+	
+.text5  {
+	font-family: 'Reggae One', cursive;
+	}
+
+/* Header */
+
+.header {
+	background-color: var(--greyshade7);
+	height: 75px;
+	}
+	
+.nav-flex {
+	display: flex;
+	padding: 15px 0;
+	justify-content: space-evenly;
+	}
+	
+.nav-flex > a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 25px;
+	border-radius: 10px;
+	}
+	
+.nav-flex > a:hover {
+	background-color: var(--greyshade6);
+	}	
+	
+/* Top section */
+
+.section-flex {
+	display: flex;
+	margin: 75px 0;
+	justify-content: space-around;
+	}
+	
+.section-flex > section {
+	width: 50%;
+	min-width: 350px;
+	}
+	
+.section-flex > section > div {
+	min-height: 150px;
+	background-color: var(--greyshade1);
+	}
+	
+.section-flex > aside {
+	width: 350px;
+	background-color: var(--greyshade4);
+	}
+	
+
+.pic-box {
+	width: 100px;
+	height: 100px;
+	float: left;
+	border: 5px solid var(--greyshade7);
+	border-radius: 10px;
+	background-color: grey;
+	transform: rotate(-15deg);
+	box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+	}
+	
+.pic-box:hover {
+	transform: rotate(0);
+	box-shadow: none;
+	}
+	
+.clear-left {
+	clear: left;
+	}
+	
+/* Section Latest Posts */
+
+.latest-posts {
+	background-color: #E8E8E8;
+	}
+
+.section-lp-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 50px 75px;
+	}
+	
+.section-lp-grid > div {
+	position: relative;
+	height: 700px;
+	justify-items: stretch;
+	background-color: var(--greyshade1);
+	}
+	
+.arrow {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 50px 50px;
+	color: var(--greyshade7);
+	}
+
+	
+.section-lp-grid > div:hover {
+	position: relative;
+	z-index: 1;
+	background-color: white;
+	transform: scale(1.1);
+	overflow: hidden;
+	}
+	
+.section-lp-grid > div:hover .arrow {
+	background-color: var(--greyshade6);
+	color: white;
+	}
+	
+#full-row {
+	grid-row-start: 2;
+	grid-column-end: span 3;;
+	}
+	
+#full-row:hover {
+	background-color: var(--greyshade1);
+	transform: scale(1);
+	}
+
+	
+/* Top Color(Blue) Section */
+
+.top-color-section {
+	background-color: var(--greyshade5);
+	height: 500px;
+	}
+
+/* Our Guides Section */
+
+.section-og-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	row-gap: 50px;
+	column-gap: 50px;
+	
+	margin: 50px 25px;
+	}
+	
+.section-og-grid > div {
+	max-width: 450px;
+	height: 550px;
+	background-color: var(--greyshade1);
+	}
+
+	
+/* Bottom Color (Red) Section */
+
+.bottom-color-section {
+	background-color: var(--greyshade7);
+	height: 300px;
+	}
+	
+/* Community Links Section */
+
+.community-links > header {
+	margin: 50px 25px;
+	height: 400px;
+	background: var(--greyshade1);
+	}
+
+.section-cl-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: stretch;
+	row-gap: 50px;
+	margin: 50px 25px;
+	}
+	
+.section-cl-grid > div {
+	height: 200px;
+	background: var(--greyshade1);
+	
+	}
+	
+/* Aside Go to top of page */
+#go-to-top {
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	padding: 20px 20px;
+	border-radius: 10px;
+	background-color: grey;
+	color:white;
+	}
+	
+#go-to-top:hover {
+	background-color: black;
+	}
+		
+/* Footer */
+
+.footer {
+	background-color: var(--greyshade7);
+	height: 500px;
+	}
+	
+	
